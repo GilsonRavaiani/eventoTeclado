@@ -138,3 +138,16 @@ if(e.code == "ArrowRight"){
 console.log("Apertou a seta à direita");
 }
 })
+
+Ao salvar as mudanças e voltar ao navegador, a mensagem deve ser impressa no terminal quando apertarmos a tecla da seta à direita.
+
+Se apertar a tecla de novo ou continuar apertando-a, um número aparecerá à esquerda da mensagem que indica quantas vezes o evento foi disparado.
+
+Nesse momento, o elemento quadrado está a zero pixels de distância da borda esquerda do seu elemento pai dele, o body. Para deslocá-lo dez pixels à direita, no bloco de código da nossa estrutura condicional, adicionamos dez ao valor atual da variável distanciaDaEsquerda e imprimimos o seu o valor no terminal.
+
+document.addEventListener("keydown", (e) => {
+if(e.code == "ArrowRight"){
+distanciaDaEsquerda = distanciaDaEsquerda + 10
+console.log(distanciaDaEsquerda);
+}
+})

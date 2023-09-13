@@ -26,3 +26,10 @@ document.addEventListener("keydown", (e) => {
     // console.log("Apertou a seta à direita");
   }
 })
+
+document.addEventListener("keydown", (e) => {
+  if(e.code == "ArrowRight"){
+    distanciaDaEsquerda = distanciaDaEsquerda + 10
+    console.log(distanciaDaEsquerda);
+  }
+})
