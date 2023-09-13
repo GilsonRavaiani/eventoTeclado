@@ -60,3 +60,29 @@ Tipo Descrição
 keypress => Tipo de evento que só reconhece teclas de letras, números ou pontuação, ou seja, desconsidera teclas como Shift, Alt, setas etc.
 keydown => Tipo de evento disparado ao apertar uma tecla. Ele é executado de forma repetida se a tecla permanece apertada.
 keyup => Tipo de evento disparado ao soltar uma tecla. Importante destacar que, antes, ela precisa ser pressionada.
+
+##Tipos de eventos de teclado
+
+Esses eventos são usados em diferentes situações. Eles nos permitem ter mais controle sobre o tipo de interação que queremos para o usuário.
+
+Eventos de teclado
+
+Os eventos de teclado podem ser atribuídos a elementos do tipo input se quisermos, por exemplo, ativá-los apenas quando o usuário inserir alguma informação em um local específico e travando se ele escrever em outro; ou diretamente no DOM, se quisermos que o evento seja disparado em qualquer parte da nossa página.
+
+No nosso caso, o evento de teclado será aplicado diretamente no objeto Document para dispará-lo sem precisar selecionar nenhum elemento específico. Assim, o site reconhecerá o comando logo quando clicarmos em alguma tecla.
+
+Propriedades key e code
+
+Primeiro, definimos um evento do tipo keyup e declaramos uma arrow function no eventListener, que recebe o parâmetro e (evento). Dessa forma:
+
+document.addEventListener("keyup", (e)=> {
+
+})
+
+Para entender melhor os eventos de teclado, usaremos a função console.log() para ver quais propriedades existem:
+
+document.addEventListener("keyup", (e)=> {
+
+console.log(e);
+
+})
