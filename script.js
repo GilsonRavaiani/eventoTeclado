@@ -24,8 +24,14 @@ document.addEventListener("keydown", (e) => {
   if(e.code == "ArrowRight"){
     
     // console.log("Apertou a seta à direita");
-  }
-  else (e.code == "ArrowLeft")
+  }  
+})
+
+document.addEventListener("keydown", (e) => {
+  if (e.code == "ArrowLeft"){
+    
+    // console.log("Apertou a seta à direita");
+  }  
 })
 
 document.addEventListener("keydown", (e) => {
@@ -34,10 +40,14 @@ document.addEventListener("keydown", (e) => {
     console.log(distanciaDaEsquerda);
     quadrado.style.left = distanciaDaEsquerda + "px"
   }
-  else (e.code == "ArrowLeft")
+  
+})
+
+document.addEventListener("keydown", (e) => {
+if (e.code == "ArrowLeft") {
   distanciaDaDireita = distanciaDaDireita + 10
   console.log(distanciaDaDireita);
   quadrado.style.right = distanciaDaDireita + "px"
-    
-})
+}   
 
+})
