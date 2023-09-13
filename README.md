@@ -88,3 +88,9 @@ console.log(e);
 })
 
 Ao salvar as mudanças e abrir nosso projeto no navegador com o LiveServer, é preciso clicar em qualquer tecla para ver o DevTools imprimindo algo semelhante a essa mídia na aba Console:
+
+O nome KeyboardEvent indica que o evento disparado é um evento de teclado.
+
+Se clicarmos no triângulo à esquerda do KeyboardEvent, podemos ver todas as propriedades que os eventos de teclado possuem. As duas propriedades que mais nos interessam nesse momento são code e key.
+
+Neste link, temos a lista de code e key para todas as teclas.
