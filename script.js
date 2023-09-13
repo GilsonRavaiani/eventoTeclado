@@ -31,5 +31,6 @@ document.addEventListener("keydown", (e) => {
   if(e.code == "ArrowRight"){
     distanciaDaEsquerda = distanciaDaEsquerda + 10
     console.log(distanciaDaEsquerda);
+    quadrado.style.left = distanciaDaEsquerda + "px"
   }
 })

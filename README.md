@@ -151,3 +151,5 @@ distanciaDaEsquerda = distanciaDaEsquerda + 10
 console.log(distanciaDaEsquerda);
 }
 })
+
+Após salvar as mudanças e voltar no navegador, um incremento de 10 em 10 deve ser impresso no terminal cada vez que apertarmos a tecla da seta à direita.
