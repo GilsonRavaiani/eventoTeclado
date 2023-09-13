@@ -86,3 +86,5 @@ document.addEventListener("keyup", (e)=> {
 console.log(e);
 
 })
+
+Ao salvar as mudanças e abrir nosso projeto no navegador com o LiveServer, é preciso clicar em qualquer tecla para ver o DevTools imprimindo algo semelhante a essa mídia na aba Console:
