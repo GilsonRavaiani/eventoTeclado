@@ -14,7 +14,7 @@ Para demonstrar o uso dos eventos de teclado, usaremos como exemplo um projeto s
 
 O arquivo index.html segue o padrão de estrutura base HTML. Veja o exemplo.
 
-<body>
+<!-- <body>
     <h2>Tecla apertada: =>Elemento pai.
       <span id="key-text"></span> => Elemento filho.
     </h2>
@@ -22,7 +22,7 @@ O arquivo index.html segue o padrão de estrutura base HTML. Veja o exemplo.
       <span id="code-text"></span>
     </h2>
     <div id="quadrado"></div> =>Elemento que iremos interagir através do evento pelo teclado.
-</body>
+</body> -->
 
 No código anterior, temos três elementos principais: dois h2 e uma div. Ambos elementos h2 tem um próprio elemento span como filho.
 
