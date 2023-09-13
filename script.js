@@ -9,3 +9,9 @@ document.addEventListener("keyup",
   console.log(e.key);
   console.log(e.code);
 })
+
+document.addEventListener("keyup", 
+(e)=> {
+  keyText.innerText = e.key;
+  codeText.innerText = e.code;
+})
