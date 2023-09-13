@@ -2,7 +2,6 @@ let keyText = document.querySelector("#key-text");
 let codeText = document.querySelector("#code-text");
 let quadrado = document.querySelector("#quadrado");
 let distanciaDaEsquerda = 0
-let distanciaDaDireita = 0
 
 document.addEventListener("keyup",
 (e)=> {
@@ -26,13 +25,8 @@ document.addEventListener("keydown", (e) => {
     // console.log("Apertou a seta à direita");
   }  
 })
-
-document.addEventListener("keydown", (e) => {
-  if (e.code == "ArrowLeft"){
-    
+   
     // console.log("Apertou a seta à direita");
-  }  
-})
 
 document.addEventListener("keydown", (e) => {
   if(e.code == "ArrowRight"){
@@ -41,13 +35,4 @@ document.addEventListener("keydown", (e) => {
     quadrado.style.left = distanciaDaEsquerda + "px"
   }
   
-})
-
-document.addEventListener("keydown", (e) => {
-if (e.code == "ArrowLeft") {
-  distanciaDaDireita = distanciaDaDireita + 10
-  console.log(distanciaDaDireita);
-  quadrado.style.right = distanciaDaDireita + "px"
-}   
-
 })
