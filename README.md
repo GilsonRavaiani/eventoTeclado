@@ -1,6 +1,6 @@
 # eventoTeclado
 
-Material de feito por: https://prozeducacao.com.br/
+Material de apoio feito por: https://prozeducacao.com.br/
 
 Introdução
 
