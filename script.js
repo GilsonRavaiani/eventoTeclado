@@ -22,6 +22,7 @@ document.addEventListener("keydown", (e) => {  //Usaremos o evento keydown para 
 
 document.addEventListener("keydown", (e) => {
   if(e.code == "ArrowRight"){
-    console.log("Apertou a seta à direita");
+    
+    // console.log("Apertou a seta à direita");
   }
 })
