@@ -153,3 +153,11 @@ console.log(distanciaDaEsquerda);
 })
 
 Após salvar as mudanças e voltar no navegador, um incremento de 10 em 10 deve ser impresso no terminal cada vez que apertarmos a tecla da seta à direita.
+
+Após salvar as mudanças e voltar no navegador, o elemento quadrado deve se deslocar 10 px à direita cada vez que apertarmos a tecla da seta à direita.
+
+## Conclusão
+
+Embora pouco usados no desenvolvimento web, os eventos de teclado podem destacar os nossos sites, oferecendo a possibilidade do usuário interagir com a página usando o teclado.
+
+Fechar um pop-up com a tecla Escape ou mostrar subseções da barra de navegação apertando teclas numéricas são exemplos de interações práticas e simples de implementar nos sites.
