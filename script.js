@@ -25,6 +25,7 @@ document.addEventListener("keydown", (e) => {
     
     // console.log("Apertou a seta à direita");
   }
+  else (e.code == "ArrowLeft")
 })
 
 document.addEventListener("keydown", (e) => {
@@ -33,10 +34,10 @@ document.addEventListener("keydown", (e) => {
     console.log(distanciaDaEsquerda);
     quadrado.style.left = distanciaDaEsquerda + "px"
   }
-  if (e.code == "ArrowLeft")
+  else (e.code == "ArrowLeft")
   distanciaDaDireita = distanciaDaDireita + 10
   console.log(distanciaDaDireita);
   quadrado.style.right = distanciaDaDireita + "px"
-  
+    
 })
 
