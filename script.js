@@ -6,11 +6,11 @@ let distanciaDaEsquerda = 0
 
 document.addEventListener("keyup",
 (e)=> {
-  console.log(e.key);
-  console.log(e.code);
+  console.log(e.key);  //imprimindo valor que essa tecla guarda
+  console.log(e.code);  // imprimindo único código que esse botão do teclado guarda
 })
 
-document.addEventListener("keyup", 
+document.addEventListener("keyup", //Exibe os valores das propriedades
 (e)=> {
   keyText.innerText = e.key;
   codeText.innerText = e.code;

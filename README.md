@@ -103,3 +103,15 @@ document.addEventListener("keyup", (e)=> {
 console.log(e.key);
 console.log(e.code);
 })
+
+Conforme o exemplo anterior, ao apertar a tecla "A" do teclado, serão retornadas duas linhas no terminal: a letra "A" minúscula e o código KeyA.
+
+A primeira linha representa o valor que essa tecla guarda, neste caso, é a, e a segunda linha representa o único código que esse botão do teclado guarda.
+
+Podemos comparar key e code como variáveis, pois duas variáveis diferentes podem salvar o mesmo valor, mas não podem ter o mesmo nome.
+
+Para teclas com valores únicos, como as letras, podemos usar qualquer uma das propriedades sem problemas. Contudo, para teclas que compartilham valores com outras, é mais recomendável usar a propriedade code.
+
+## Exibindo os valores das propriedades
+
+Por exemplo, se quisermos exibir os valores das propriedades key e code na nossa página, podemos chamar os elementos keyText e codeText, declarados no arquivo script.js, e atribuir a propriedade innerText deles aos valores das propriedades key e code respectivamente. Observe:
