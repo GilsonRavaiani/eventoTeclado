@@ -115,3 +115,26 @@ Para teclas com valores únicos, como as letras, podemos usar qualquer uma das p
 ## Exibindo os valores das propriedades
 
 Por exemplo, se quisermos exibir os valores das propriedades key e code na nossa página, podemos chamar os elementos keyText e codeText, declarados no arquivo script.js, e atribuir a propriedade innerText deles aos valores das propriedades key e code respectivamente. Observe:
+
+Após salvar as mudanças e voltar ao navegador, os valores de ambas propriedades devem ser exibidos na página sempre que apertarmos qualquer tecla.
+
+tecla apertada: a
+Código da tecla: KeyA
+
+## Deslocar um elemento
+
+Para mover o elemento div com a classe quadrado no navegador, começamos adicionando outro eventListener ao objeto Document, dessa vez usando o tipo de evento keydown.
+
+document.addEventListener("keydown", (e) => {
+
+})
+
+Usaremos o evento keydown para poder continuar deslocando o elemento ao manter apertada uma tecla.
+
+Queremos que nosso quadrado se desloque para a direita ao apertar a tecla da seta à direita, ou arrow right. Sabendo que o código desta tecla é ArrowRight, podemos usar uma estrutura condicional na nossa arrow function para verificar o valor do code do evento. Se o valor for o mesmo que ArrowRight, podemos imprimir uma mensagem com console.log().
+
+document.addEventListener("keydown", (e) => {
+if(e.code == "ArrowRight"){
+console.log("Apertou a seta à direita");
+}
+})

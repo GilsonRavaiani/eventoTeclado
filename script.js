@@ -15,3 +15,13 @@ document.addEventListener("keyup", //Exibe os valores das propriedades
   keyText.innerText = e.key;
   codeText.innerText = e.code;
 })
+
+document.addEventListener("keydown", (e) => {  //Usaremos o evento keydown para poder continuar deslocando o elemento ao manter apertada uma tecla.
+
+})
+
+document.addEventListener("keydown", (e) => {
+  if(e.code == "ArrowRight"){
+    console.log("Apertou a seta à direita");
+  }
+})
