@@ -15,6 +15,7 @@ Para demonstrar o uso dos eventos de teclado, usaremos como exemplo um projeto s
 O arquivo index.html segue o padrão de estrutura base HTML. Veja o exemplo.
 
 <-- <body>
+
 <h2>Tecla apertada: =>Elemento pai.
 <span id="key-text"></span> => Elemento filho.
 </h2>
@@ -95,3 +96,10 @@ O nome KeyboardEvent indica que o evento disparado é um evento de teclado.
 Se clicarmos no triângulo à esquerda do KeyboardEvent, podemos ver todas as propriedades que os eventos de teclado possuem. As duas propriedades que mais nos interessam nesse momento são code e key.
 
 Neste link, temos a lista de code e key para todas as teclas.
+
+Para entender melhor a diferença entre ambas propriedades, usaremos dois console.log(). Um irá imprimir a propriedade key do evento e o outro, a propriedade code.
+
+document.addEventListener("keyup", (e)=> {
+console.log(e.key);
+console.log(e.code);
+})

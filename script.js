@@ -4,8 +4,8 @@ let quadrado = document.querySelector("#quadrado");
 let distanciaDaEsquerda = 0
 
 
-document.addEventListener("keyup", (e)=> {
-
-  console.log(e);
-
+document.addEventListener("keyup",
+(e)=> {
+  console.log(e.key);
+  console.log(e.code);
 })
