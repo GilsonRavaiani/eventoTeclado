@@ -2,7 +2,7 @@ let keyText = document.querySelector("#key-text");
 let codeText = document.querySelector("#code-text");
 let quadrado = document.querySelector("#quadrado");
 let distanciaDaEsquerda = 0
-
+let distanciaDaDireita = 0
 
 document.addEventListener("keyup",
 (e)=> {
@@ -33,4 +33,10 @@ document.addEventListener("keydown", (e) => {
     console.log(distanciaDaEsquerda);
     quadrado.style.left = distanciaDaEsquerda + "px"
   }
+  if (e.code == "ArrowLeft")
+  distanciaDaDireita = distanciaDaDireita + 10
+  console.log(distanciaDaDireita);
+  quadrado.style.right = distanciaDaDireita + "px"
+  
 })
+
